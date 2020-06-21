@@ -1,0 +1,20 @@
+{
+  "name": "lab-2",
+  "version": "1.0.0",
+  "description": "Laboratorio SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css --output-style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robert-arias/Lab-2.git"
+  },
+  "author": "Norma Chavarria y Robert Arias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robert-arias/Lab-2/issues"
+  },
+  "homepage": "https://github.com/robert-arias/Lab-2#readme"
+}
