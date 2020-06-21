@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/robert-arias/Lab-2/issues"
   },
-  "homepage": "https://github.com/robert-arias/Lab-2#readme"
+  "homepage": "https://github.com/robert-arias/Lab-2#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
 }
