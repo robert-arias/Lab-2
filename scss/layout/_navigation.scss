@@ -4,9 +4,24 @@
         display: flex;
         flex: 1 1 auto;
         align-items: center;
+
+        @media screen and (max-width: 800px) {
+          background-color: black;
+          width: 100%;
+          margin-left: 0px;
+        }
     }
     &__list {
         list-style: none;
+        @media screen and (max-width: 800px) {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          .nav--subnav & {
+            display: block;
+          }
+        }
     }
     &__item {
         display: inline-block;
@@ -29,6 +44,12 @@
         color: $primary-font-color;
         .nav--subnav & {
             font-weight: normal;
+        }
+        @media screen and (max-width: 800px) {
+          color: white;
+          .nav--subnav & {
+            color: $primary-font-color;
+          }
         }
     }
     &--subnav {

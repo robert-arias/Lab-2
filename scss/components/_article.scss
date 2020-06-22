@@ -1,9 +1,17 @@
 .article {
     margin: 25px 15px;
+
+    @media screen and (max-width: 800px) {
+      margin-left: 25px;
+    }
     &__title {
         margin-bottom: 15px;
     }
     &__text {
-        width: 450px;
+        width: 35%;
+        line-height: 20px;
+        @media screen and (max-width: 800px) {
+          width: 90%;
+        }
     }
 }
