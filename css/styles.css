@@ -128,7 +128,7 @@ body {
 }
 
 .article__text {
-  width: 35%;
+  width: 450px;
   line-height: 20px;
 }
 
@@ -141,6 +141,7 @@ body {
 .section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 25px 15px;
 }
 
