@@ -11,7 +11,7 @@
     &__item {
         display: inline-block;
         margin-right: 15px;
-        padding: 10px 0;
+        padding: 10px 10px;
         &:last-child {
             margin-right: 0;
         }
@@ -20,7 +20,6 @@
         }
         .nav--subnav &:not(:last-child)::after {
             content: "/";
-            padding: 0 10px;
         }
     }
     &__link {
