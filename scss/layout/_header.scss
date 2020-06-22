@@ -2,13 +2,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+    }
 }
 
 .logocontainer {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
     &__img {
         display: block;
         width: 100%;
         height: auto;
+
+        @media screen and (max-width: 800px) {
+          width: auto;
+          margin-bottom: 10px;
+        }
     }
+
 }
