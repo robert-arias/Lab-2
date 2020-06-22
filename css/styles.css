@@ -70,3 +70,57 @@ body {
   padding-left: 10px;
   background-color: #9DBEBB;
 }
+
+.article {
+  margin: 25px 15px;
+}
+
+.article__title {
+  margin-bottom: 15px;
+}
+
+.article__text {
+  width: 450px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 15px;
+}
+
+.section .productcontainer {
+  flex: 0 0 auto;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.section .productcontainer:not(:last-child) {
+  margin-right: 20px;
+}
+
+.section .productcontainer__title {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.section .productcontainer__price {
+  display: block;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.section .productcontainer__text {
+  margin-bottom: 5px;
+}
+
+.section .productcontainer__offer {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.section .productcontainer__saving {
+  display: block;
+  color: green;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,41 @@
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 15px;
+
+    .productcontainer {
+        flex: 0 0 auto;
+        padding: 10px;
+        border: 1px solid black;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        &__title {
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        &__price {
+            display: block;
+            color: gray;
+            margin-bottom: 5px;
+        }
+
+        &__text {
+            margin-bottom: 5px;
+        }
+
+        &__offer {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        &__saving {
+            display: block;
+            color: green;
+            margin-bottom: 5px;
+        }
+    }
+}
