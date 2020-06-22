@@ -1,0 +1,38 @@
+.nav {
+    &--header {
+        flex: 1 1 auto;
+        margin-left: 25px;
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        list-style: none;
+    }
+    &__item {
+        display: inline-block;
+        margin-right: 15px;
+        padding: 10px 0;
+        &:last-child {
+            margin-right: 0;
+        }
+        .nav--subnav & {
+            margin-right: 0;
+        }
+        .nav--subnav &:not(:last-child)::after {
+            content: "/";
+            padding: 0 10px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        font-weight: bold;
+        color: $primary-font-color;
+        .nav--subnav & {
+            font-weight: normal;
+        }
+    }
+    &--subnav {
+        padding-left: 10px;
+        background-color: $secondary-nav-background-color;
+    }
+}
