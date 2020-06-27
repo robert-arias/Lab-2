@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@300;400&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: #000;
 }
@@ -41,17 +42,17 @@ body {
 }
 
 .nav--header {
-  margin-left: 25px;
+  padding-left: 25px;
   display: flex;
   flex: 1 1 auto;
   align-items: center;
+  background-color: #000;
 }
 
 @media screen and (max-width: 800px) {
   .nav--header {
-    background-color: black;
     width: 100%;
-    margin-left: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -85,6 +86,7 @@ body {
 }
 
 .nav--subnav .nav__item:not(:last-child)::after {
+  color: #000;
   content: "/";
   padding: 0 10px;
 }
@@ -92,17 +94,19 @@ body {
 .nav__link {
   text-decoration: none;
   font-weight: bold;
-  color: #000;
+  color: #fff;
 }
 
 .nav--subnav .nav__link {
+  color: #000;
   font-weight: normal;
 }
 
+.nav__link:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 800px) {
-  .nav__link {
-    color: white;
-  }
   .nav--subnav .nav__link {
     color: #000;
   }
@@ -128,6 +132,7 @@ body {
 }
 
 .article__text {
+  font-family: 'Source Sans Pro', sans-serif;
   width: 450px;
   line-height: 20px;
 }
@@ -152,44 +157,57 @@ body {
   }
 }
 
-.productcontainer {
+.moviecontainer {
   flex: 0 0 auto;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid black;
+  width: 24%;
+  border: 1px solid #000;
+  box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25);
 }
 
-.productcontainer:not(:last-child) {
+.moviecontainer:not(:last-child) {
   margin-right: 15px;
 }
 
 @media screen and (max-width: 800px) {
-  .productcontainer:not(:last-child) {
+  .moviecontainer:not(:last-child) {
     margin-right: 0;
   }
 }
 
-.productcontainer__title {
+@media screen and (max-width: 800px) {
+  .moviecontainer {
+    width: 90%;
+  }
+}
+
+.moviecontainer__img {
+  width: 100%;
+  height: auto;
+}
+
+.moviecontainer__title {
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
-.productcontainer__price {
+.moviecontainer__price {
   display: block;
   color: gray;
   margin-bottom: 5px;
 }
 
-.productcontainer__text {
+.moviecontainer__text {
   margin-bottom: 5px;
 }
 
-.productcontainer__offer {
+.moviecontainer__offer {
   font-weight: bold;
   text-decoration: underline;
 }
 
-.productcontainer__saving {
+.moviecontainer__saving {
   display: block;
   color: green;
   margin-bottom: 5px;
